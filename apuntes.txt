@@ -1,0 +1,30 @@
+1- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+2- . ~/.nvm/nvm.sh
+3- nvm install --lts
+4- /home$ sudo mkdir logs
+5- sudo curl -sL https://github.com/DavidHormigoRamirez/aws-helloworld-node/archive/master.zip --
+output master.zip
+6- sudo apt install unzip
+7- unzip master
+8-sudo mv aws-helloworld-node-master/ app
+9- cd app
+10- npm install
+11- npm start
+12 -curl localhost:8080
+
+
+ # Instalar MVN
+          cat > /tmp/install_script.sh << EOF
+            # Start Install
+            echo "Instalando dependencias Node.JS"
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+            . ~/.nvm/nvm.sh
+            nvm install --lts
+            sudo curl -sL https://github.com/DavidHormigoRamirez/aws-helloworld-node/archive/master.zip --output master.zip
+            sudo apt install unzip
+            unzip -l master.zip
+            sudo mv aws-helloworld-node-master/ app
+            cd app
+            npm install
+            npm start 
+          EOF
